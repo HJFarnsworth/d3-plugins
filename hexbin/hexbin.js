@@ -1,3 +1,8 @@
+Reader reader = new FileReader("C:/Users/Spencer/Desktop/Homework 4/Part 3 Lat Lon Data.csv");
+
+CSVReader<String[]> csvPersonReader = CSVReaderBuilder.newDefaultReader(reader);
+List<String[]> points = csvPersonReader.readAll();
+
 (function() {
 
 d3.hexbin = function() {
